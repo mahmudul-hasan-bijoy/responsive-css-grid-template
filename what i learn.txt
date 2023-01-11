@@ -1,0 +1,5 @@
+1. css grid layout for 2/4 column website.
+
+2. responsiveness
+
+3. menu-top/content-middle/sidebar-side

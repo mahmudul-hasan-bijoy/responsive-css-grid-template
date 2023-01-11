@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* RESET CSS BEGIN */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET CSS END*/
+
+/* CSS VARIABLES */
+:root {
+	--primary: #ddd;
+	--dark: #333;
+	--light: #fff;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* GENERAL */
+* {
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	color: var(--dark);
+}
+
+body {
+	background: #ccc;
+	margin: 30px 50px;
+	line-height: 1.4;
+}
+
+.btn {
+	background: var(--dark);
+	color: var(--light);
+	padding: 0.4em 1em;
+	text-decoration: none;
+	border: 0;
+}
+
+.btn:hover {
+	transition: 0.3s all ease;
+	transform: scale(0.95);
+}
+
+li a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+}
+
+/* NAVIGATION */
+.main-nav ul {
+	display: grid;
+	grid-gap: 20px;
+	padding: 0;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+	background: var(--primary);
+	display: block;
+	padding: 0.8em;
+	text-align: center;
+	color: var(--dark);
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+	background: var(--dark);
+	color: var(--light);
+	transition: 0.3s all ease-in-out;
+}
+
+/* TOP-CONTAINER */
+.top-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		" showcase showcase top-box-a "
+		" showcase showcase top-box-b ";
+}
+
+/* SHOWCASE */
+.showcase {
+	grid-area: showcase;
+	min-height: 400px;
+	background: url(assets/img/showcase.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 3em;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+	font-size: 4rem;
+	font-weight: 700;
+	margin-bottom: 0;
+	color: var(--light);
+}
+
+.showcase p {
+	font-size: 1.3rem;
+	color: var(--light);
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+/* TOP BOX */
+.top-box {
+	background: var(--primary);
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	box-shadow: var(--shadow);
+	padding: 1.5em;
+}
+
+.top-box .price {
+	font-size: 2.2rem;
+}
+
+.top-box-a {
+	grid-area: top-box-a;
+}
+
+.top-box-b {
+	grid-area: top-box-b;
+}
+
+/* BOXES */
+.boxes {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+	background: var(--primary);
+	text-align: center;
+	padding: 1.2em 1.8em;
+	box-shadow: var(--shadow);
+}
+
+.box h3 {
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+/* INFO */
+.info {
+	background: var(--primary);
+	box-shadow: var(--shadow);
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 3em;
+}
+
+.info h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+
+.info p {
+	margin-bottom: 1em;
+}
+
+/* PORTFOLIO */
+.portfolio {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+	width: 100%;
+	box-shadow: var(--shadow);
+}
+
+/* FOOTER */
+footer {
+	margin-top: 1.5em;
+	background: var(--dark);
+	text-align: center;
+	padding: 1em;
+}
+
+footer p {
+	color: var(--light);
+	font-weight: 700;
+}
