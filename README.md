@@ -1,6 +1,6 @@
 <img src="assets/img/screenshot.jpeg" title="Responsive CSS Grid Layout">
 
-# <a href="https://mahmudul-hasan-bijoy.github.io/responsive-css-grid-template/" target="_blank">Responsive CSS Grid Layout</a><br>
+# <a href="https://responsive-cssgrid-template.netlify.app/" target="_blank">Responsive CSS Grid Layout</a><br>
 
 - Onepage Website
 - HTML5
